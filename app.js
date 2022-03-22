@@ -2,17 +2,16 @@ const computerChoiceDisplay = document.getElementById("computer-choice");
 const userChoiceDisplay = document.getElementById("user-choice");
 const result = document.getElementById("result");
 
-const buttons = document.querySelectorAll("button");
+const images = document.querySelectorAll("img");
 const posibbleAnswers = ["rock", "paper", "scissors"];
 
-buttons.forEach((button) =>
-  button.addEventListener("click", (e) => {
+images.forEach((image) =>
+  image.addEventListener("click", (e) => {
     const userChoice = e.target.id;
-    userChoiceDisplay.innerText = userChoice;
+    userChoiceDisplay.setAttribute("src", `images/${userChoice}.png`);
     const randomNumber = Math.floor(Math.random() * posibbleAnswers.length);
-    console.log(randomNumber);
     const computerChoice = posibbleAnswers[randomNumber];
-    computerChoiceDisplay.innerText = computerChoice;
+    computerChoiceDisplay.setAttribute("src", `images/${computerChoice}.png`);
 
     if (userChoice === computerChoice) {
       result.innerText = "It's a draw";
