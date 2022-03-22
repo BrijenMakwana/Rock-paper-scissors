@@ -1,0 +1,45 @@
+h1{
+    color: #FBF3E4;
+    font-size: 50px;
+}
+h2{
+    color: #FBF3E4;
+}
+h3{
+    color: #EC255A;
+    font-size: 30px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+img:hover{
+    cursor: pointer;
+}
+div{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+body{
+    background-color: #105652;
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+    
+        font-size: 30px;
+    }   
+    h3{
+    
+        font-size: 25px;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    
+    }
+}   
