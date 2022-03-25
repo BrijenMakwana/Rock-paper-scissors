@@ -1,3 +1,7 @@
+body{
+    background-image: linear-gradient(to right, #ef745c , #34073d);;
+}
+
 h1{
     color: #FBF3E4;
     font-size: 50px;
@@ -6,7 +10,7 @@ h2{
     color: #FBF3E4;
 }
 h3{
-    color: #EC255A;
+    color: #fff;
     font-size: 30px;
 }
 img{
@@ -22,9 +26,7 @@ div{
     margin: auto;
     text-align: center;
 }
-body{
-    background-color: #105652;
-}
+
 
 @media screen and (max-width: 480px) {
     h1{
